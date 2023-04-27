@@ -39,7 +39,7 @@ In order to read user input, we're using the `io` library from the standard libr
     let mut guess = String::new();
 ```
 
-This creates new String and binds it to a mutable variable called `guess`. By default variables in Rust are immutable. Obviously if this were an immutable string then the `read_line` function would have a difficult time storing anything it it, so we use the `mut` keyword to make it mutable. In the call to `String::new()`, the `::` part tells us that `new` is an _associated function_ implemented on the String type. Many types in Rust implement a `new` constructor like this.
+This creates new String and binds it to a mutable variable called `guess`. By default variables in Rust are immutable. Obviously if this were an immutable string then the `read_line` function would have a difficult time storing anything in it, so we use the `mut` keyword to make it mutable. In the call to `String::new()`, the `::` part tells us that `new` is an _associated function_ implemented on the String type. Many types in Rust implement a `new` constructor like this.
 
 ```rust
     io::stdin()
